@@ -12,6 +12,10 @@ LaTeX 讀作 /ˈlɑːtɛx/（ㄌㄚㄉㄝㄏ），是一個基於 TeX 的排版�
 - [基本規則](basics.md)
 - [文件結構](document_structure.md)
 - [數學](math/math.md)
+  - [其他數學環境](math/math_environments.md)
+  - [數學符號](math/math_symbols.md)
+  - 定理
+  - 矩陣
 - [中文](CJK.md)
 
 ## 參考資料
