@@ -1,4 +1,4 @@
-**LaTeX 筆記**｜[首頁](../README.md)
+**LaTeX 筆記**｜[首頁](README.md)
 
 -------------
 
@@ -33,7 +33,7 @@ LaTeX 的第一行用來宣告輸出文檔的類型，完整格式如下。
 ```
 
 ### 套件 Packages
-LaTeX 內建的指令往往不夠應付我們需要的排版需求，而自己用內建的底層語法來編寫常常也相當複雜。這時我們通常就會選用第三方提供的套件，它們的設計往往比我們自己手刻還要方便與專業。
+LaTeX 內建的指令往往不夠應付我們的排版需求，而自己用內建的底層語法來編寫常常也相當複雜。這時我們通常就會選用第三方提供的套件，它們的設計往往比我們自己手刻還要方便與專業。
 
 引用一個套件相當簡單，只要一行指令就能獲得套件提供的各種指令、字體等等。
 ```tex
@@ -72,25 +72,18 @@ LaTeX 輸出的內文會放在 `\begin{document}` 與 `\end{document}` 之間。
 除了用空行來分段落以外，我們可以利用指令來分出層級更高的章節分隔。一般使用 `\section` 來分隔章節，對於層級更小的，有 `\subsection`、`\subsubsection` 等等。章節指令都需要一個參數作為章節標題。如果一份文件有目錄，那麼會以這些章節指令來組織目錄。章節會自動在標題前面添加編號。例如：
 ```tex
 \section{First}
-  aaa
-  
-  bbb
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate, velit vitae hendrerit scelerisque, nulla velit efficitur odio, eu ultricies sem lectus vel erat. Pellentesque in blandit ex.
+
+Nullam tincidunt dapibus eros et fringilla. Praesent at nisl lorem. Fusce nec tristique odio. Donec a aliquam ex. Cras in ornare nunc. Donec volutpat libero sit amet tempor efficitur. Integer in mi non libero mollis porta.
 
 \section{Second}
-  ccc
-```
-會被輸出成（僅示意，文字大小、字型、間距以實際輸出為準）
-```
-1 First
-aaa
 
-bbb
-
-2 Second
-ccc
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate, velit vitae hendrerit scelerisque, nulla velit efficitur odio, eu ultricies sem lectus vel erat. Pellentesque in blandit ex.
 ```
+會被輸出成
+![](../img/docstruct_sections.png)
 
 -------------
 
-**LaTeX 筆記**｜[首頁](../README.md)
+**LaTeX 筆記**｜[首頁](README.md)
 

@@ -16,7 +16,8 @@ LaTeX 讀作 /ˈlɑːtɛx/（ㄌㄚㄉㄝㄏ），是一個基於 TeX 的排版�
   - [數學符號](math/math_symbols.md)
   - 定理
   - 矩陣
-- [中文](CJK.md)
+- [字型](font/font.md)
+  - [中文](font/CJK.md)
 
 ## 參考資料
 - [LaTeX - Wikibooks](https://en.wikibooks.org/wiki/LaTeX)
