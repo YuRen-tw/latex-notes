@@ -26,21 +26,24 @@
   - [點點點](#點點點)
 
 ## 字體
-數學式裡面就算是同樣的字母，不同的字體往往代表不同的意思。常用的幾個列表如下（示意的部分以實際輸出為準）
+數學式裡面就算是同樣的拉丁字母，不同的字體往往代表不同的意思。常用的幾個列表如下：
 
 > ※ 雖然 Unicode 有收錄相關不同字體的符號給數學使用（[數學字母數字符號](https://zh.wikipedia.org/wiki/數學字母數字符號)），不過在 LaTeX 裡面我們一般還是會用指令來輸入。
 
-類別     | LaTeX | 示意  | 說明
-:-------:|-------|-------|-------
-一般     |       | *ABC* *abc* 123 | 斜體字母、正體數字
-羅馬體   | `\mathrm{…}`   | ABC abc 123 | 正體
-義大利體 | `\mathit{…}`   | *ABC* *abc* *123* | 斜體
-粗體     | `\mathbf{…}`   | **ABC abc 123** |
-無襯線體 | `\mathsf{…}`   | 𝖠𝖡𝖢 𝖺𝖻𝖼 𝟣𝟤𝟥 | 沒設定的話，上面的一般都會是襯線體
-等寬體   | `\mathtt{…}`   | `ABC abc 123` |
-哥德體   | `\mathfrak{…}` | 𝔄𝔅ℭ 𝔞𝔟𝔠 | 數字沒有歌德體
-書寫體   | `\mathcal{…}`  | 𝒜ℬ𝒞 | 只有大寫字母
-黑板粗體 | `\mathbb{…}`   | 𝔸𝔹ℂ | 雙線體，只有大寫字母，須引用 `mathsymb` 套件
+類別     | LaTeX | 示意 | 說明
+:-------:|-------|------|-------
+一般     |       | (1) | 斜體字母、正體數字
+羅馬體   | `\mathrm{…}`   | (2) | 正體
+義大利體 | `\mathit{…}`   | (3) | 斜體
+粗體     | `\mathbf{…}`   | (4) |
+無襯線體 | `\mathsf{…}`   | (5) |
+等寬體   | `\mathtt{…}`   | (6) |
+哥德體   | `\mathfrak{…}` | (7) | 沒有數字
+書寫體   | `\mathcal{…}`  | (8) | 只有大寫
+黑板粗體 | `\mathbb{…}`   | (9) | 雙線體，只有大寫，須引用 `mathsymb`
+
+示意圖：
+<br>![](../img/mathsym_mathfont.png)
 
 ### 多字母函數
 一般來說，多字母的函數應該使用羅馬體來表示。大部分常用的函數已經內建好了，常用的條列如下：
@@ -98,11 +101,14 @@
 
 符號 | LaTeX | 符號 | LaTeX | 符號 | LaTeX | 符號 | LaTeX
 :---:|-------|:----:|-------|:----:|-------|:----:|-------
-ı | `\imath` | ȷ | `\jmath`  | ∂ | `\partial` | ∇ | `\nabla`
-ℜ | `\Re`    | ℑ | `\Im`     | ℵ | `\aleph`   | ℶ | `\beth`
-∞ | `\infty` | ∅ | `\empty`* | ∅ | `\varnothing`*
+ı | `\imath` | ȷ | `\jmath`     | ∂ | `\partial` | ∇ | `\nabla`
+ℜ | `\Re`    | ℑ | `\Im`        | ℵ | `\aleph`   | ℶ | `\beth`*
+∞ | `\infty` | ∅ | `\emptyset`  | ∅ | `\varnothing`*
 
-> [*] 空集合符號，前面的比較窄，像 0；後面的須引用 `amssymb` 才可使用。
+> [*] 須引用 `amssymb`。
+
+示意圖：
+<br>![](../img/mathsym_otherletters.png)
 
 ## 位置
 ### 空格
@@ -130,11 +136,11 @@ LaTeX    | 大小
 
 <tr><th>文字樣式<td>
 
-![](../img/supsub_text.png)
+![](../img/mathsym_supsub_text.png)
 
 <tr><th>展示樣式<td>
 
-![](../img/supsub_display.png)
+![](../img/mathsym_supsub_display.png)
 </table>
 
 ### 根號
@@ -160,58 +166,93 @@ LaTeX    | 大小
 \+ | +        | - | -         | × | `\times` | ÷ | `\div`
 ±  | `\pm`    | ∓ | `\mp`     | ⋅ | `\cdot`  | ∘ | `\circ`
 ⊕  | `\oplus` | ⊗ | `\otimes` | ∧ | `\wedge` | ∨ | `vee`
-∩  | `\cap`   | ∪ | `\cup`    | ∖ | `\setminus`
+∩  | `\cap`   | ∪ | `\cup`    | ∖ | `\setminus`* | ∖ | `\smallsetminus`*
+
+> [*] 兩個都是差集運算，後者須引用 `amssymb`。
+
+示意圖：
+<br>![](../img/mathsym_operations.png)
 
 ### 關係
 下列幾種關係符號都可以在前面加上 `\not` 來表示「非」，輸出時會在符號上畫一撇。
 
 符號 | LaTeX | 符號 | LaTeX | 符號 | LaTeX | 符號 | LaTeX
 :---:|-------|:----:|-------|:----:|-------|:----:|-------
-=  | =         | ≠ | `\neq`    | ≡  | `\equiv`    | ≔ | `\coloneqq`*
-≅  | `\cong`   | ~ | `\sim`    | ≈  | `\approx`
-\> | >         | < | <         | ≥  | `\geq`      | ≤ | `\leq`
+=  | =         | ≠ | `\neq`¹   | ≡  | `\equiv`    | ≔ | `\coloneqq`²
+≅  | `\cong`   | ~ | `\sim`    | ≈  | `\approx`   | ∝ | `\propto`
+\> | >         | < | <         | ≥  | `\geq`¹     | ≤ | `\leq`¹
 ⊃  | `\supset` | ⊂ | `\subset` | ⊇  | `\supseteq` | ⊆ | `\subseteq`
-∈  | `\in`     | ∉ | `\notin`  | \| | `\mid`      | ∥ | `\parallel`
+∈  | `\in`     | \| | `\mid`   | ∥ | `\parallel`  | ⊥ | `\perp`
 
-> [*] 須引用 `mathtools` 才可使用。
+> [1] `\neq`、`\geq`、`\leq` 也可以用 `\ne`、`\ge`、`\le`。
+> [2] 須引用 `mathtools`。
+
+示意圖：
+<br>![](../img/mathsym_relations.png)
 
 ### 邏輯
 
-符號 | LaTeX | 符號 | LaTeX | 符號 | LaTeX
-:---:|-------|:----:|-------|:----:|-------
-¬ | `\neg`     | ∧ | `\land`     | ∨ | `\lor`
-∃ | `\exists`  | ∀ | `\forall`   | → | `\to`
-∵ | `\because` | ∴ | `\therefore`
+符號 | LaTeX | 符號 | LaTeX | 符號 | LaTeX | 符號 | LaTeX
+:---:|-------|:----:|-------|:----:|-------|:----:|-------
+¬ | `\neg`     | ∧ | `\land`   | ∨ | `\lor`     | → | `\to`
+∃ | `\exists`  | ∀ | `\forall` | ∵ | `\because` | ∴ | `\therefore`
+⊨ | `\models`  | ⊢ | `\vdash`  | ⊤ | `\top`     | ⊥ | `\bot`
+
+> [*] 須引用 `amssymb`。
+
+示意圖：
+<br>![](../img/mathsym_logic.png)
 
 ### 大符號
 
 符號 | LaTeX | 符號 | LaTeX | 符號 | LaTeX | 符號 | LaTeX
 :---:|-------|:----:|-------|:----:|-------|:----:|-------
-∑ | `\sum`    | ∏ | `\prod`   | ∫ | `\int`      | ∮ | `\oint`
+∑ | `\sum`    | ∏ | `\prod`   | ∐ | `\corprod`  | ∫ | `\int`
 ⋂ | `\bigcap` | ⋃ | `\bigcup` | ⊕ | `\bigoplus` | ⊗ | `\bigotimes`
+∮ | `\oint`   | ∬ | `\iint`*  | ∭ | `\iiint`*  | ∫…∫ | `\idotsint`*
+
+> [*] 須引用 `amssymb`。
+
+示意圖：
+<br>![](../img/mathsym_big.png)
 
 ### 箭頭
 
 符號 | LaTeX | 符號 | LaTeX | 符號 | LaTeX
 :---:|-------|:----:|-------|:----:|-------
-→ | `\rightarrow` | ← | `\leftarrow` | ↔ | `\leftrightarrow`
-⇒ | `\Rightarrow` | ⇐ | `\Leftarrow` | ⇔ | `\Leftrightarrow`
-↑ | `\uparrow`    | ↓ | `\downarrow` | ↦ | `\mapsto`
+→ | `\rightarrow`¹ | ← | `\leftarrow`¹ | ↔ | `\leftrightarrow`¹
+⇒ | `\Rightarrow`¹ | ⇐ | `\Leftarrow`¹ | ⇔ | `\Leftrightarrow`¹
+↑ | `\uparrow`     | ↓ | `\downarrow`  | ↦ | `\mapsto`¹
+↗ | `\nearrow`²    | ↘ | `\searrow`²
+
+> [1] 水平方向的箭頭都有加長的版本，例如 `\longrightarrow` 或 `Longrightarrow`。
+> [2] `ne` 代表東北、`se` 代表東南，反方向的斜箭頭以此類推。
+
+示意圖：
+<br>![](../img/mathsym_arrows.png)
 
 ### 括號
-下面幾種括號都可以在前面使用 `\big`、`\Big`、`\bigg`、`\Bigg` 增加大小；也可以在左右括號的前面分別加上 `\left` 與 `\right`，它會自動判斷裡面的內容調整大小。
+下面幾種括號都可以在前面使用 `\bigl`/`\bigr`、`\Bigl`/`\Bigr`、`\biggl`/`\biggr`、`\Biggl`/`\Biggr` 增加大小；也可以在左右括號的前面分別加上 `\left` 與 `\right`，讓它自動判斷裡面的內容調整大小。
 
 符號 | LaTeX | 符號 | LaTeX | 符號 | LaTeX | 符號 | LaTeX
 :---:|-------|:----:|-------|:----:|-------|:----:|-------
-( | `(`       | ) | `)`       | \[ | `[`       | ] | `]`
-{ | `\{`      | } | `\}`      | \| | `\|`      | ‖ | `\\|`
-⟨ | `\langle` | ⟩ | `\rangle`
-⌈ | `\lceil`  | ⌉ | `\rceil`  | ⌊  | `\lfloor` | ⌋ | `\rfloor`
+( | `(`      | ) | `)`     | \[ | `[`     | ] | `]`
+{ | `\{`     | } | `\}`    | ⟨ | `\langle` | ⟩ | `\rangle`
+\| | `\|`    | ‖ | `\\|`
+⌈ | `\lceil` | ⌉ | `\rceil` | ⌊  | `\lfloor` | ⌋ | `\rfloor`
+
+示意圖：
+<br>![](../img/mathsym_delimiters.png)
 
 ### 點點點
 符號 | LaTeX | 符號 | LaTeX | 符號 | LaTeX | 符號 | LaTeX
 :---:|-------|:----:|-------|:----:|-------|:----:|-------
-… | `\dots` | ⋯ | `\cdots` | ⋮ | `\vdots` | ⋱ | `\ddots`
+… | `\dots`* | ⋯ | `\cdots`* | ⋮ | `\vdots` | ⋱ | `\ddots`
+
+> [*] `\dots` 的位置在基線上，而 `\cdots` 則在中線，使用時機不同。
+
+示意圖：
+<br>![](../img/mathsym_dots.png)
 
 -------------
 

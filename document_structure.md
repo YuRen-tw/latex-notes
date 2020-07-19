@@ -72,16 +72,25 @@ LaTeX 輸出的內文會放在 `\begin{document}` 與 `\end{document}` 之間。
 除了用空行來分段落以外，我們可以利用指令來分出層級更高的章節分隔。一般使用 `\section` 來分隔章節，對於層級更小的，有 `\subsection`、`\subsubsection` 等等。章節指令都需要一個參數作為章節標題。如果一份文件有目錄，那麼會以這些章節指令來組織目錄。章節會自動在標題前面添加編號。例如：
 ```tex
 \section{First}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate, velit vitae hendrerit scelerisque, nulla velit efficitur odio, eu ultricies sem lectus vel erat. Pellentesque in blandit ex.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Donec vulputate, velit vitae hendrerit scelerisque, nulla
+velit efficitur odio, eu ultricies sem lectus vel erat.
+Pellentesque in blandit ex.
 
-Nullam tincidunt dapibus eros et fringilla. Praesent at nisl lorem. Fusce nec tristique odio. Donec a aliquam ex. Cras in ornare nunc. Donec volutpat libero sit amet tempor efficitur. Integer in mi non libero mollis porta.
+Nullam tincidunt dapibus eros et fringilla. Praesent at
+nisl lorem. Fusce nec tristique odio. Donec a aliquam ex.
+Cras in ornare nunc. Donec volutpat libero sit amet tempor
+efficitur. Integer in mi non libero mollis porta.
 
 \section{Second}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate, velit vitae hendrerit scelerisque, nulla velit efficitur odio, eu ultricies sem lectus vel erat. Pellentesque in blandit ex.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Donec vulputate, velit vitae hendrerit scelerisque, nulla
+velit efficitur odio, eu ultricies sem lectus vel erat.
+Pellentesque in blandit ex.
 ```
 會被輸出成
-![](../img/docstruct_sections.png)
+<br>![](./img/docstruct_sections.png)
 
 -------------
 
