@@ -184,7 +184,7 @@ LaTeX    | 大小
 ⊃  | `\supset` | ⊂ | `\subset` | ⊇  | `\supseteq` | ⊆ | `\subseteq`
 ∈  | `\in`     | \| | `\mid`   | ∥ | `\parallel`  | ⊥ | `\perp`
 
-> [1] `\neq`、`\geq`、`\leq` 也可以用 `\ne`、`\ge`、`\le`。
+> [1] `\neq`、`\geq`、`\leq` 也可以用 `\ne`、`\ge`、`\le`。<br>
 > [2] 須引用 `mathtools`。
 
 示意圖：
@@ -225,7 +225,7 @@ LaTeX    | 大小
 ↑ | `\uparrow`     | ↓ | `\downarrow`  | ↦ | `\mapsto`¹
 ↗ | `\nearrow`²    | ↘ | `\searrow`²
 
-> [1] 水平方向的箭頭都有加長的版本，例如 `\longrightarrow` 或 `Longrightarrow`。
+> [1] 水平方向的箭頭都有加長的版本，例如 `\longrightarrow` 或 `Longrightarrow`。<br>
 > [2] `ne` 代表東北、`se` 代表東南，反方向的斜箭頭以此類推。
 
 示意圖：
