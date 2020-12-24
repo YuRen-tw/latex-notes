@@ -14,10 +14,20 @@ LaTeX 讀作 /ˈlɑːtɛx/（ㄌㄚㄉㄝㄏ），是一個基於 TeX 的排版�
 - [數學](math/math.md)
   - [其他數學環境](math/math_environments.md)
   - [數學符號](math/math_symbols.md)
-  - 定理
-  - 矩陣
+  - [矩陣](math/math_matrices.md)
+  - [分段](math/math_cases.md)
+  - [定理](math/math_theorems.md)
 - [字型](font/font.md)
   - [中文](font/CJK.md)
+- 圖表
+  - 圖
+  - 列表
+  - 表格
+- 標記與引用
+  - hyperref
+  - cleveref
+- 文獻參考
+  - BibTeX
 
 ## 參考資料
 - [LaTeX - Wikibooks](https://en.wikibooks.org/wiki/LaTeX)

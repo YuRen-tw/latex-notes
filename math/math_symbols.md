@@ -194,9 +194,9 @@ LaTeX    | 大小
 
 符號 | LaTeX | 符號 | LaTeX | 符號 | LaTeX | 符號 | LaTeX
 :---:|-------|:----:|-------|:----:|-------|:----:|-------
-¬ | `\neg`     | ∧ | `\land`   | ∨ | `\lor`     | → | `\to`
-∃ | `\exists`  | ∀ | `\forall` | ∵ | `\because` | ∴ | `\therefore`
-⊨ | `\models`  | ⊢ | `\vdash`  | ⊤ | `\top`     | ⊥ | `\bot`
+¬ | `\neg`     | ∧ | `\land`   | ∨ | `\lor`      | → | `\to`
+∃ | `\exists`  | ∀ | `\forall` | ∵ | `\because`* | ∴ | `\therefore`*
+⊨ | `\models`  | ⊢ | `\vdash`  | ⊤ | `\top`      | ⊥ | `\bot`
 
 > [*] 須引用 `amssymb`。
 
